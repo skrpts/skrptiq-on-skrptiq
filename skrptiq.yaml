@@ -1,0 +1,39 @@
+# --- Identity ---
+name: "skrptiq-on-skrptiq"
+display_name: "Skrptiq-on-Skrptiq"
+description: "Use Skrptiq to design, build, and publish new skrpts — a four-stage compound workflow chain that demonstrates multi-stage pipelines with human-in-the-loop gates"
+version: "1.0.1"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+
+# --- Discovery (Hub) ---
+category: "developer"
+tags:
+  - "builder"
+  - "authoring"
+  - "meta"
+  - "compound-workflow"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 9
+  prompts: 9
+  workflows: 4
+  services: 1
+  sources: 2
+  documents: 0
+  assets: 0
+  total: 25
