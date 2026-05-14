@@ -2,8 +2,8 @@
 name: "skrptiq-on-skrptiq"
 display_name: "Skrptiq-on-Skrptiq"
 description: "Use Skrptiq to design, build, and publish new skrpts — a four-stage compound workflow chain that demonstrates multi-stage pipelines with human-in-the-loop gates"
-version: "1.0.1"
-engine: ">=1.0.0"
+version: "1.0.3"
+engine: ">=0.1.0"
 
 # --- Attribution ---
 author:

@@ -66,6 +66,22 @@ Run these checks systematically. Each check is pass or fail — no judgement nee
 - Every node has `type`, `id`, `title`
 - Manifest has `name`, `description`, `version`, `engine`, `licence`, `category`, `requires`, `contents`
 
+### D6. Execution Completeness
+- `local.*` step types do NOT need a `prompt` field; all others do
+- Context bindings must not be empty strings
+- `step_type` is valid: generation, content, review, synthesis, validation, analysis, or `local.*`
+
+### D7. Loop Completeness (if applicable)
+- Every loop has `id`, `mode`, `steps` (non-empty), `maxIterations`
+- `until_pass` loops have a `verifier` in the `steps` list
+- `for_each` loops have `inputExpression`
+- `for_each` loop prompts use `{{loop.item}}`
+
+### D8. Pipeline Coherence
+- `output_step` references an existing skill file
+- `output_step` is a deliverable step (generation, synthesis, content) or a gate
+- Pipeline has at least one generation or synthesis step
+
 ## Phase 2: Semantic Checks
 
 Run these checks using your judgement. Each check is pass, warn, or fail.

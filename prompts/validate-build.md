@@ -54,8 +54,10 @@ Run these checks in order:
 ### 5. Execution Block
 
 - [ ] Every execution entry has `skill`, `prompt`, and `step_type`
+- [ ] `local.*` step types (local.transform, local.template, local.builtin) do NOT need a `prompt` field
 - [ ] Every skill in execution has a matching `uses` connection in the workflow
-- [ ] Step types are valid: generation, content, review, synthesis, validation
+- [ ] Step types are valid: generation, content, review, synthesis, validation, analysis, or any `local.*`
+- [ ] Context bindings must not be empty strings — provide sensible defaults
 
 ### 6. Manifest Counts
 
@@ -70,7 +72,17 @@ Run these checks in order:
 
 - [ ] Every loop has `id`, `mode`, `steps`, `maxIterations`
 - [ ] For `until_pass` loops: `verifier` is specified and is in the `steps` list
+- [ ] For `for_each` loops: `inputExpression` is present (guaranteed runtime failure without it)
+- [ ] For `for_each` loops: at least one loop step prompt uses `{{loop.item}}`
 - [ ] All step IDs in the loop exist in the execution block
+
+### 8. Content Quality
+
+- [ ] All user-facing text uses British English (analyse not analyze, colour not color, organise not organize)
+- [ ] Descriptions are specific and meaningful
+- [ ] `output_step` references an existing skill file
+- [ ] `output_step` is a generation, synthesis, or content step (not review/validation unless it's a gate)
+- [ ] Pipeline has at least one generation or synthesis step
 
 ### Output Format
 
