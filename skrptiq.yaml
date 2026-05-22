@@ -3,7 +3,7 @@ id: "b5036465-4964-4c12-a3e4-3af3ac718231"
 name: "skrptiq-on-skrptiq"
 display_name: "Skrptiq-on-Skrptiq"
 description: "Use Skrptiq to design, build, and publish new skrpts — a four-stage compound workflow chain that demonstrates multi-stage pipelines with human-in-the-loop gates"
-version: "1.0.7"
+version: "1.0.10"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -16,10 +16,10 @@ licence: "MIT"
 # --- Discovery (Hub) ---
 category: "developer"
 tags:
-  - "builder"
   - "authoring"
-  - "meta"
+  - "builder"
   - "compound-workflow"
+  - "meta"
 
 # --- Security & Access ---
 requires:
