@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.11
+GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 5 inline shared-content files and declare 5 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
+
 ## v1.0.10
 Wave 2: re-signed with canonical engine signing pipeline.
 
