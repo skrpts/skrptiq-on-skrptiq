@@ -3,7 +3,7 @@ id: "b5036465-4964-4c12-a3e4-3af3ac718231"
 name: "skrptiq-on-skrptiq"
 display_name: "Skrptiq-on-Skrptiq"
 description: "Use Skrptiq to design, build, and publish new skrpts — a four-stage compound workflow chain that demonstrates multi-stage pipelines with human-in-the-loop gates"
-version: "1.0.11"
+version: "1.0.12"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -60,3 +60,17 @@ contents:
   documents: 0
   assets: 0
   total: 20
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:09:00.322Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/skrptiq-on-skrptiq/security"

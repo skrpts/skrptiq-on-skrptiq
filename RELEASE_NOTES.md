@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.12
+GH#745 — declare per-step `output: {name, type}` on every execution step (idea_analysis/text, idea_verdict/decision, architecture/text, design_verdict/decision, nodes/text, build_validation/decision, build_verdict/decision, publish_check/decision, publish_verdict/decision (across the 4 chained workflows)). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.0.11
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 5 inline shared-content files and declare 5 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

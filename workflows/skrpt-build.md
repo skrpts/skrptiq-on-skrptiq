@@ -38,12 +38,15 @@ execution:
   - skill: "node-generation"
     prompt: "generate-nodes"
     step_type: "generation"
+    output: { name: "nodes", type: "text" }
   - skill: "build-validation"
     prompt: "validate-build"
     step_type: "validation"
+    output: { name: "build_validation", type: "decision" }
   - skill: "build-gate"
     prompt: "review-build"
     step_type: "review"
+    output: { name: "build_verdict", type: "decision" }
 ---
 
 ## Overview

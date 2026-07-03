@@ -27,9 +27,11 @@ execution:
   - skill: "architecture-design"
     prompt: "design-architecture"
     step_type: "generation"
+    output: { name: "architecture", type: "text" }
   - skill: "design-gate"
     prompt: "review-design"
     step_type: "review"
+    output: { name: "design_verdict", type: "decision" }
 ---
 
 ## Overview

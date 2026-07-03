@@ -27,9 +27,11 @@ execution:
   - skill: "idea-analysis"
     prompt: "analyse-idea"
     step_type: "generation"
+    output: { name: "idea_analysis", type: "text" }
   - skill: "idea-gate"
     prompt: "review-idea"
     step_type: "review"
+    output: { name: "idea_verdict", type: "decision" }
 ---
 
 ## Overview

@@ -25,9 +25,11 @@ execution:
   - skill: "publish-check"
     prompt: "check-publication"
     step_type: "validation"
+    output: { name: "publish_check", type: "decision" }
   - skill: "publish-gate"
     prompt: "review-publication"
     step_type: "review"
+    output: { name: "publish_verdict", type: "decision" }
 ---
 
 ## Overview
