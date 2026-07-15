@@ -7,8 +7,6 @@ tags: [Production, Gate, Stage-1]
 connections:
   - target: llm-service
     type: runs_on
-metadata:
-  gate: true
 ---
 
 ## Capability
@@ -27,7 +25,7 @@ Pauses the workflow and presents the idea validation report to the user for revi
 - Is the restated goal accurate? Does it capture what you actually want?
 - Is the recommended pipeline pattern right for your use case?
 - Are the identified node types correct — anything missing or unnecessary?
-- If there's catalogue overlap, do you still want to proceed (customisation, different approach)?
+- If there's catalog overlap, do you still want to proceed (customization, different approach)?
 - Is the complexity rating acceptable, or should the scope be simplified?
 
 ## How to Respond

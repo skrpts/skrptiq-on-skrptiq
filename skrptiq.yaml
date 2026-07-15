@@ -3,7 +3,7 @@ id: "b5036465-4964-4c12-a3e4-3af3ac718231"
 name: "skrptiq-on-skrptiq"
 display_name: "Skrptiq-on-Skrptiq"
 description: "Use Skrptiq to design, build, and publish new skrpts — a four-stage compound workflow chain that demonstrates multi-stage pipelines with human-in-the-loop gates"
-version: "1.0.12"
+version: "1.0.13"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -63,7 +63,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T16:01:15.577Z"
+  scanned_at: "2026-07-15T11:39:40.449Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

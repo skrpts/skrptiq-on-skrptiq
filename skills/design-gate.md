@@ -7,8 +7,6 @@ tags: [Production, Gate, Stage-2]
 connections:
   - target: llm-service
     type: runs_on
-metadata:
-  gate: true
 ---
 
 ## Capability

@@ -78,7 +78,7 @@ Run these checks in order:
 
 ### 8. Content Quality
 
-- [ ] All user-facing text uses British English (analyse not analyze, colour not color, organise not organize)
+- [ ] All user-facing text uses British English (analyze not analyze, color not color, organize not organize)
 - [ ] Descriptions are specific and meaningful
 - [ ] `output_step` references an existing skill file
 - [ ] `output_step` is a generation, synthesis, or content step (not review/validation unless it's a gate)

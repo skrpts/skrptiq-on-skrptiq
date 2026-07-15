@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.13
+GH#844 — migrate the gate step from node-meta (`metadata.gate: true` in the skill) to the canonical execution-entry `gate: true` on the workflow step. Single source of truth; the engine + app read the execution entry. No behaviour change — `IsGate` is identical.
+
 ## v1.0.12
 GH#745 — declare per-step `output: {name, type}` on every execution step (idea_analysis/text, idea_verdict/decision, architecture/text, design_verdict/decision, nodes/text, build_validation/decision, build_verdict/decision, publish_check/decision, publish_verdict/decision (across the 4 chained workflows)). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
 

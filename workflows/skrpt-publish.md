@@ -29,6 +29,7 @@ execution:
   - skill: "publish-gate"
     prompt: "review-publication"
     step_type: "review"
+    gate: true
     output: { name: "publish_verdict", type: "decision" }
 ---
 
@@ -78,7 +79,7 @@ This is **Stage 4** — the final stage. Input comes from Stage 3 (Skrpt Build).
 
 1. Save the generated files from Stage 3 as a skrptiq workspace
 2. Run the skrpt locally to test the pipeline end-to-end
-3. Publish to the Hub catalogue
+3. Publish to the Hub catalog
 
 ## Provider Notes
 

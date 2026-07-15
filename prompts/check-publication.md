@@ -103,7 +103,7 @@ Run these checks using your judgement. Each check is pass, warn, or fail.
 
 ### S4. British English
 - Are all user-facing strings (descriptions, prompt content, documentation) in British English?
-- Check for: "analyze" → "analyse", "color" → "colour", "optimize" → "optimise", etc.
+- Check for: "analyze" → "analyze", "color" → "color", "optimize" → "optimize", etc.
 
 ### S5. Documentation Completeness
 - Does the workflow body include: overview, pipeline stages, inputs table, outputs table?

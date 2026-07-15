@@ -1,19 +1,19 @@
 ---
 type: prompt
 id: analyse-idea
-title: Analyse Idea
-description: "Evaluates a plain-language skrpt idea for feasibility, required nodes, catalogue overlap, and complexity"
+title: Analyze Idea
+description: "Evaluates a plain-language skrpt idea for feasibility, required nodes, catalog overlap, and complexity"
 tags: [Production, Builder, Stage-1]
 inputs:
   idea:
     label: "Skrpt Idea"
     description: "Describe what you want your skrpt to do — plain language, as detailed or brief as you like"
-    example: "A workflow that takes a research paper, extracts the key findings, generates a thread of social media posts summarising them, and lets me review before publishing"
+    example: "A workflow that takes a research paper, extracts the key findings, generates a thread of social media posts summarizing them, and lets me review before publishing"
     required: true
     type: longtext
   existing_skrpts:
     label: "Existing Skrpts"
-    description: "Names of skrpts already in your catalogue (for overlap checking). Leave blank if unsure."
+    description: "Names of skrpts already in your catalog (for overlap checking). Leave blank if unsure."
     example: "blog-post-pipeline, research-paper-pipeline, social-media-campaign"
     required: false
     type: longtext
@@ -39,7 +39,7 @@ You have access to the Skrpt Authoring Reference and Skrpt Patterns Reference, w
 
 {{input.idea}}
 
-### Existing Catalogue
+### Existing Catalog
 
 {{input.existing_skrpts}}
 
@@ -80,12 +80,12 @@ Recommend one of: **Linear**, **Review Loop (until_pass)**, **Human-Gated**, **B
 
 Explain why this pattern fits the idea. If multiple patterns could work, name your recommendation and briefly explain why the alternative is less suitable.
 
-### 5. Catalogue Overlap
+### 5. Catalog Overlap
 
 If existing skrpts were provided, check for overlap:
 - **Full overlap:** an existing skrpt already does this — name it and explain
 - **Partial overlap:** an existing skrpt covers part of this — name it, explain the gap
-- **No overlap:** nothing in the catalogue addresses this use case
+- **No overlap:** nothing in the catalog addresses this use case
 
 If no existing skrpts were provided, note that overlap couldn't be checked.
 

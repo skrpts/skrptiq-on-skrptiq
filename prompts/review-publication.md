@@ -43,6 +43,6 @@ The publication check is complete. Review the results below and decide whether y
 Your skrpt is ready to:
 1. Save as a workspace in the skrptiq app
 2. Run locally to test the pipeline
-3. Publish to the Hub catalogue for others to discover and import
+3. Publish to the Hub catalog for others to discover and import
 
 Congratulations — you just used Skrptiq to build a skrpt for Skrptiq.

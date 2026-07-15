@@ -23,7 +23,7 @@ metadata:
 
 Drives the architecture design step. Takes the validated idea summary from Stage 1 and produces a structured design specification that Stage 3's generator can consume directly.
 
-**Context technique:** This prompt expects a summarised validated idea, not the full Stage 1 conversation transcript. The user (or app) provides the structured analysis section — restated goal, node inventory, pipeline pattern, complexity assessment.
+**Context technique:** This prompt expects a summarized validated idea, not the full Stage 1 conversation transcript. The user (or app) provides the structured analysis section — restated goal, node inventory, pipeline pattern, complexity assessment.
 
 ## Prompt
 

@@ -2,7 +2,7 @@
 type: workflow
 id: idea-validation
 title: Idea Validation
-description: "Takes a plain-language skrpt idea, evaluates feasibility, identifies required node types, checks catalogue overlap, and assesses complexity"
+description: "Takes a plain-language skrpt idea, evaluates feasibility, identifies required node types, checks catalog overlap, and assesses complexity"
 tags: [Production, Builder, Stage-1]
 connections:
   - target: idea-analysis
@@ -31,6 +31,7 @@ execution:
   - skill: "idea-gate"
     prompt: "review-idea"
     step_type: "review"
+    gate: true
     output: { name: "idea_verdict", type: "decision" }
 ---
 
@@ -46,9 +47,9 @@ This stage answers: can this be built? What does it need? Does anything like it 
 
 **Skill:** idea-analysis | **Prompt:** analyse-idea
 
-Evaluates the idea against the skrpt platform's capabilities. Produces a structured report covering: restated goal, feasibility verdict, node type inventory, recommended pipeline pattern, catalogue overlap, and complexity assessment.
+Evaluates the idea against the skrpt platform's capabilities. Produces a structured report covering: restated goal, feasibility verdict, node type inventory, recommended pipeline pattern, catalog overlap, and complexity assessment.
 
-**Input:** The user's plain-language idea and optionally a list of existing catalogue skrpts for overlap checking.
+**Input:** The user's plain-language idea and optionally a list of existing catalog skrpts for overlap checking.
 
 **Output:** Structured validation report with a proceed/simplify/reconsider recommendation.
 
@@ -63,7 +64,7 @@ Execution pauses. The user reviews the validation report and responds with appro
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
 | `{{input.idea}}` | Yes | What should your skrpt do? | "A workflow that takes a research paper and generates social media posts" |
-| `{{input.existing_skrpts}}` | No | Names of existing catalogue skrpts | "blog-post-pipeline, research-paper-pipeline" |
+| `{{input.existing_skrpts}}` | No | Names of existing catalog skrpts | "blog-post-pipeline, research-paper-pipeline" |
 
 ## Outputs
 

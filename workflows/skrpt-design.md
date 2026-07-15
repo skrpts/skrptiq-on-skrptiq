@@ -31,6 +31,7 @@ execution:
   - skill: "design-gate"
     prompt: "review-design"
     step_type: "review"
+    gate: true
     output: { name: "design_verdict", type: "decision" }
 ---
 
@@ -38,7 +39,7 @@ execution:
 
 Stage 2 of the Skrptiq-on-Skrptiq pipeline. Takes the validated idea from Stage 1 and produces a complete, structured design specification. The output is a machine-readable blueprint — not prose — that Stage 3's generator can consume directly.
 
-**Context technique:** This stage expects a summarised validated idea, not the full Stage 1 conversation. Paste the structured analysis (restated goal, node inventory, pipeline pattern, complexity) — not the raw transcript.
+**Context technique:** This stage expects a summarized validated idea, not the full Stage 1 conversation. Paste the structured analysis (restated goal, node inventory, pipeline pattern, complexity) — not the raw transcript.
 
 ## Pipeline
 

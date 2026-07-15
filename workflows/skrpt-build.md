@@ -46,6 +46,7 @@ execution:
   - skill: "build-gate"
     prompt: "review-build"
     step_type: "review"
+    gate: true
     output: { name: "build_verdict", type: "decision" }
 ---
 
@@ -67,7 +68,7 @@ Generates all node files from the design specification. On the first iteration, 
 
 **Input:** The approved design from Stage 2 (structured JSON/YAML).
 
-**Output:** Complete file set as fenced code blocks, each labelled with its path.
+**Output:** Complete file set as fenced code blocks, each labeled with its path.
 
 #### Step 2: Build Validation
 
